@@ -1,21 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Application - Add Contact</title>
-</head>
-<body>
-    <main>
-        <h2>Add Contact</h2>
-        <form action="add_contact.php" method="post">
-            <label for="first_name">First Name : </label><input type="text" name="first_name"><br><br>
-            <label for="middle_name">Middle Name : </label><input type="text" name="middle_name"><br><br>
-            <label for="last_name">Last Name : </label><input type="text" name="last_name"><br><br>
-            <label for="Phone_number">Phone Number : </label><input type="number" name="phone_number"><br><br>
-            <button type="submit">Add</button>
-        </form>
-        <a href="display_contacts.php">Back to Contact List</a>
-    </main>
-</body>
-</html>
+<?php
+    require "./connect.php";
+    $first_name = $_POST['first_name'];
+    $middle_name = $_POST['middle_name'];
+    $last_name = $_POST['last_name'];
+    $phone_number = $_POST['phone_number']; 
+
+    mysqli_query($conn, "INSERT INTO contacts (first_name, middle_name, last_name, phone_number) VALUES ('$first_name', '$middle_name', '$last_name', '$phone_number')");
+    header("Location: display_contacts.php");
+?>
