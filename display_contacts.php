@@ -29,7 +29,9 @@
                 }
             ?>
         </ul>
-        <a href="add_contact_form.php">Add Contact</a>
+        <button><a href="add_contact_form.php">Add Contact</a></button>
+        <button><a href="edit_contact_form.php">Edit Contact</a></button>
+        <button><a href="delete_contact_form.php">Delete Contact</a></button>
     </main>
   </body>
 </html>
