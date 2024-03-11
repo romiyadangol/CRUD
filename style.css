@@ -27,6 +27,15 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0F2B2B;
+}
+
+button:active {
+    background-color: #0A1C1C;
 }
 
 button a {
