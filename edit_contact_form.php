@@ -8,7 +8,7 @@
 </head>
 <body>
     <main>
-        <h2>Add Contact</h2>
+        <h2>Edit Contact</h2>
         <form action="edit_contact.php" method="post">
             <label for="id">Id : </label><input type="text" name="id"><br><br>
             <label for="first_name">First Name : </label><input type="text" name="first_name"><br><br>
